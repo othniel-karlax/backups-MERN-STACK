@@ -1,0 +1,36 @@
+import React from "react";
+import { useState } from "react";
+import AuctionAmount from "./Auction";
+import BonusAmount from "./Bonus";
+
+
+function FrontPage(){
+    const[click,setClick]=useState("")
+
+    const handleClick = (e) =>
+    {
+        const{name}=e.target
+        setClick(name);
+    }
+
+
+    return(
+        <React.Fragment>
+             <div id="header">
+               <div id="bt">72 bussiness<br></br>tools</div>
+                <div id="ct">chit interest<br></br>Calculator</div>
+            </div>
+            <div>
+                <div id="buttons">
+                <button name="auction-amount" id="fbutton" onClick={handleClick}>Auctioned Amount & Interest</button>
+                <button name="bonus-amount" id="sbutton" onClick={handleClick}>Bonus & Interest</button>
+                </div>
+            </div>
+            {
+                (click==="bonus-amount")?<BonusAmount/>:<AuctionAmount/>
+            }
+        </React.Fragment>
+    )
+
+}
+export default FrontPage;

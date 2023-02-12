@@ -1,0 +1,167 @@
+//react
+
+import React from "react";
+
+function AmountFirst (){
+    var b=0;
+    var au=0;
+    var d=0;
+    var ri=0;
+    var auctionbut=0;
+    var Rsidediv=0;
+    var presentmont=0;
+    function fun ()
+    {
+        var button=document.getElementById("fbutton")
+        button.style.color="rgb(245, 8, 87)"
+        button.style.background="white"
+        var button=document.getElementById("sbutton")
+        button.style.color="white"
+        button.style.background="rgb(245, 8, 87)"
+
+        var a=document.getElementById("remove");
+       if(b==0){
+        a.style.display="none";
+       }
+       var c=document.getElementById("Rside-div");
+       if(d==0){
+        c.style.display="none";
+       }
+       var auctionbutton=document.getElementById("auction-amount")
+       if(auctionbut==0){
+       auctionbutton.style.display="block";
+       }
+       var presentmonth=document.getElementById("present-month")
+       if(presentmont==0){
+       presentmonth.style.display="block";
+       }
+       var Rsidedivf=document.getElementById("Rside-divf")
+       if(Rsidediv==0){
+        Rsidedivf.style.display="block";
+       }
+    }
+    function funs()
+    {
+        var button=document.getElementById("fbutton")
+        button.style.color="white"
+        button.style.background="rgb(245, 8, 87)"
+        var buttons=document.getElementById("sbutton")
+        buttons.style.color="rgb(245, 8, 87)";
+        buttons.style.background="white"
+        var auction=document.getElementById("remove");
+
+       if(au==0){
+        auction.style.display="block";
+       }
+       var right=document.getElementById("Rside-div");
+       if(ri==0){
+        right.style.display="block";
+       }
+       var auctionbutton=document.getElementById("auction-amount")
+       if(auctionbut==0){
+       auctionbutton.style.display="none";
+       }
+       var presentmonth=document.getElementById("present-month")
+       if(presentmont==0){
+       presentmonth.style.display="none";
+       }
+       var Rsidedivf=document.getElementById("Rside-divf")
+       if(Rsidediv==0){
+        Rsidedivf.style.display="none";
+       }
+    }
+
+
+
+    return(
+        <React.Fragment>
+            <div id="header">
+               <div id="bt">72 bussiness<br></br>tools</div>
+                <div id="ct">chit interest<br></br>Calculator</div>
+            </div>
+            <div>
+                <div id="buttons">
+                <button onClick={funs} id="fbutton" >Auctioned Amount & Interest</button>
+                <button onClick={fun} id="sbutton">Bonus & Interest</button>
+                </div>
+            </div>
+            <div id="parentdiv-whitebg">
+                <div id="Lside-div">
+                    <div>
+                        <label id="label">Chit value</label>
+                        <br></br>
+                        <input type={"text"} id="input"></input> 
+                        <div id="auction-amount">
+                        <label>Auction amount</label>
+                        <br></br>
+                        <input type={"text"} id="inputsid"></input>
+                        </div>
+                    </div>
+                    <br></br>
+                    <div><label>Commission Percentage %</label>
+                    <br></br>
+                    <select value={"commission percentage"} id="input-dr">
+                        <option value="5%">5%</option>
+                        <option value="10%">10%</option>
+                        <option value="15%">15%</option>
+                    </select>
+                    <div id="present-month">
+                    <label>Present Month</label>
+                    <br></br>
+                    <input type={"text"} id="inputsid"></input>
+                    </div>
+                    </div>
+                    <br></br>
+                    <div><label>Total Months</label>
+                    <br></br>
+                    <input type={"text"}id="input"></input></div>
+                    <br></br>
+                    <div id="remove"><label>Present Months</label>
+                    <br></br>
+                    <input type={"number"}id="input"></input></div>
+                    <br></br>
+                    <input type={"button"} value={"Clear"}id="input-cl"></input>
+                    <input type={"button"} value={"Calculate"}id="input-ca"></input>
+                </div>
+                <div>
+                <div id="Rside-divf">
+                    <table id="tablerdf">
+                        <tr>
+                            <td id="border">Amount payable for current month</td>
+                            <td id="border"></td>
+                        </tr>
+                        <tr>
+                            <td id="border">Interest Value</td>
+                            <td id="border"></td>
+                        </tr>
+                        <tr>
+                            <td id="border">Amount for auctioned person</td>
+                            <td id="border"></td>
+                        </tr>
+                        <tr>
+                            <td id="border">Bonus Amount</td>
+                            <td id="border"></td>
+                        </tr>
+                    </table>
+
+                </div>
+                <div id="Rside-div">
+                    <div>
+                        <th>
+                            <td id="tablehead">S.No</td>
+                            <td id="tablehead">Interest</td>
+                            <td id="tablehead">Auctioned Amount</td>
+                            <td id="tablehead">Installment</td>
+                            <td id="tablehead">Commission</td>
+                        </th>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div id="footer">
+                &#169; 2022, Alpha Business Solutions Pvt.Ltd.All Rights Reserved.
+            </div>
+        </React.Fragment>
+    )
+}
+export default AmountFirst;

@@ -1,0 +1,76 @@
+import React from "react";
+
+
+
+function BonusAmount (){
+
+    return(
+        <React.Fragment>
+             <div id="parentdiv-whitebg">
+                <div id="Lside-div">
+                    <form>
+                    <div>
+                        <label id="label">Chit value</label>
+                        <br></br>
+                        <input type={"text"} id="input"></input> 
+                        <div id="auction-amount">
+                        <label>Auction amount</label>
+                        <br></br>
+                        <input type={"text"} id="inputsid"></input>
+                        </div>
+                    </div>
+                    <br></br>
+                    <div><label>Commission Percentage %</label>
+                    <br></br>
+                    <select value={"commission percentage"} id="input-dr">
+                        <option value="5%">5%</option>
+                        <option value="10%">10%</option>
+                        <option value="15%">15%</option>
+                    </select>
+                    <div id="present-month">
+                    <label>Present Month</label>
+                    <br></br>
+                    <input type={"text"} id="inputsid"></input>
+                    </div>
+                    </div>
+                    <br></br>
+                    <div>
+			            <label>Total Months</label>
+                    	<br></br>
+                    	<input type={"text"}id="input"></input>
+		             </div>
+
+                    <br></br>
+
+                    <button id="input-cl">Clear</button>
+                    <button id="input-ca">Calculate</button>
+                    </form>
+                    </div>
+                    </div>
+                    <div id="Rside-divf">
+                    <table id="tablerdf">
+                        <tr>
+                            <td id="border">Amount payable for current month</td>
+                            <td id="border"></td>
+                        </tr>
+                        <tr>
+                            <td id="border">Interest Value</td>
+                            <td id="border"></td>
+                        </tr>
+                        <tr>
+                            <td id="border">Amount for auctioned person</td>
+                            <td id="border"></td>
+                        </tr>
+                        <tr>
+                            <td id="border">Bonus Amount</td>
+                            <td id="border"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="footer">
+                &#169; 2022, Alpha Business Solutions Pvt.Ltd.All Rights Reserved.
+            </div>
+        </React.Fragment>
+    )
+}
+export default BonusAmount;

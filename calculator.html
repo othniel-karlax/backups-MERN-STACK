@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./calculator.css" type="text/css">
+</head>
+<body>
+    <div class="projectcalc">
+        <div class="calc">
+            <input type="text" placeholder="0"  id="aaron"  >
+            <button onclick="show('cl')">cl</button>
+            <button onclick="show('del')">del</button>
+            <button onclick="show(1)">1</button>
+            <button onclick="show('+')">+</button>
+            <button onclick="show(2)">2</button>
+            <button onclick="show(3)">3</button>
+            <button onclick="show(4)">4</button>
+            <button onclick="show('-')">-</button>
+            <button onclick="show(5)">5</button>
+            <button onclick="show(6)">6</button>
+            <button onclick="show(7)">7</button>
+            <button onclick="show('*')">x</button>
+            <button onclick="show(8)">8</button>
+            <button onclick="show(9)">9</button>
+            <button onclick="show(0)">0</button>
+            <button onclick="show('/')">/</button>
+            <button id="f" onclick="show('=')">=</button>
+    </div>
+    <div>
+        <button onclick="send('c')"
+    </div>
+    <script>
+        function show(a)
+        {
+           let plh =document.getElementById("aaron");
+            switch(a){
+                case 1 : plh.value+=1;
+                break;
+                case 2 : plh.value+=2;
+                break;
+                case 3 : plh.value+=3;
+                break;
+                case 4 : plh.value+=4;
+                break;
+                case 5 : plh.value+=5;
+                break;
+                case 6 : plh.value+=6;
+                break;
+                case 7 : plh.value+=7;
+                break;
+                case 8 : plh.value+=8;
+                break;
+                case 9 : plh.value+=9;
+                break;
+                case 0 : plh.value+=0;
+                break;
+
+
+                case "+": plh.value+="+";
+                break;
+                case "-": plh.value+="-";
+                break;
+                case "*": plh.value+="*";
+                break;
+                case "/": plh.value+="/";
+                break;
+                case 'cl': plh.value="";
+                break;
+                case 'del' : plh.value=plh.value.slice(0,-1);
+                break;
+                case "=":
+                     result=eval(plh.value);
+                     plh.value=result;
+                     break;
+
+            }
+        }
+        function send(a){
+            let r=document.getElementByID
+            switch (a) {
+                case "c": 
+                    
+                    break;
+            
+                default:
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>

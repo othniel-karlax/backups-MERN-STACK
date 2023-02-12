@@ -1,0 +1,104 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(134, 247, 168);
+    padding: 100px ;
+    
+}
+    h1, h2 {
+        background-image: url(./css\ 2.jfif);
+        background-repeat: no-repeat;
+        text-indent: 150px;
+        
+    color: #e44c83;
+    letter-spacing:0.6em;
+   
+
+}
+    p {
+    color: #ca6f13;
+}
+.othniel{
+    line-height: 4.1em;
+    letter-spacing: 0.6em;
+    word-spacing: 0.4em;
+    text-transform: uppercase;
+    text-align: justify;
+    
+}
+p.othniel::first-letter{
+    font-size: 300%;
+    font-family: serif;
+    color: #e44c83;
+}
+p.othniel::first-line{
+    font-size: 80%;
+    font-weight: bold;
+    color: black;
+    font-family: cursive;
+}
+
+
+#hi{
+    background-color: black;
+    background-position: 30pt;
+    vertical-align: text-top;
+}
+h3{
+    text-indent: 3%;
+} 
+a:link{
+    color: rgb(86, 21, 139);
+    text-decoration: none;
+}
+a:visited{
+    color: rgb(17, 17, 17);
+}
+a:hover{
+    color: deeppink;
+    text-decoration: underline;
+}
+input.text{
+    color: aqua;
+    background-color: black;
+}
+input.text:focus{
+    color: #e44c83;
+}
+input.submit{
+    color: rgb(224, 15, 15);
+    background-color: violet;
+}
+input.submit:hover{
+    background-color: aqua;
+}
+input.submit:active{
+ 
+    background-color: black;
+}
+.aaron{
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 10px;
+    width:500px;
+    text-indent: 3%;
+    font-size: larger;
+    color: rgb(17, 17, 231);
+    border-top: 9px solid #11b41e ;
+    border-bottom: 9px solid #2ac91c ;
+   border-style: ridge;
+   border-right-color: black;
+   border-right-width: 12px;
+   border-left-color: black;
+   border-left-width: 12px;
+   border-spacing: 1px;
+   border-width: 1cm;
+line-height: 25px;}
+
+.www{
+    border: 5px solid;
+    width: 275px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}

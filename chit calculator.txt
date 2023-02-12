@@ -1,0 +1,181 @@
+//css
+
+
+/* .table
+{
+  border: 1px solid salmon;
+  
+}
+.hj{
+  text-align: center;
+} */
+body{
+  background: rgba(192, 192, 192, 0.445);
+  color: aliceblue;
+}
+#header{
+  background-color: white;
+  color: black;
+  padding-top: 5px;
+  height: 50px;
+}
+#buttons{
+  background-color: white;
+  border-radius: 5px;
+  width: 340px;
+  height:45px;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+#fbutton{
+  margin-left: 10px;
+  margin-top: 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color:rgb(245, 8, 87);;
+  color:white;
+}
+#sbutton{
+  padding: 10px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color:rgb(245, 8, 87);
+}
+#parentdiv-whitebg{
+  background-color: white;
+  height: 400px;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+#Lside-div{
+  position: absolute;
+  top: 180px;
+  /* width: 450px; */
+  padding-right:50px;
+  margin-left: 40px;
+  margin-top: 20px;
+  font-size: 14px;
+  background-color: white;
+  color:rgb(121, 118, 118);
+  border-right: 2px solid silver;
+}
+#Rside-div{
+  position: absolute;
+  top: 180px;
+  left: 450px;
+  height: 320px;
+  width: 800px;
+  border-radius: 5px;
+  border: 2px solid silver;
+  margin-top: 15px ;
+}
+#Rside-divf{
+  position: absolute;
+  top: 200px;
+  left: 700px;
+  margin-top: 10px ;
+  color: black;
+  display: none;
+}
+#border{
+  border: 1px solid silver;
+  padding: 20px 70px 20px 10px;
+ /* text-align: ; */
+ font-size: 13px;
+ color: rgb(141, 138, 138);
+}
+#tablerdf{
+  border-collapse: collapse;
+}
+#input{
+  border-radius: 3px;
+  width: 250px;
+  height:22px ;
+  background-color: rgba(192, 192, 192, 0.459);
+  border: none;
+}
+#inputsid{
+  border-radius: 3px;
+  width: 250px;
+  height:22px ;
+  background-color: rgba(192, 192, 192, 0.459);
+  border: none;
+}
+#auction-amount{
+  float: right;
+  margin: -20px 0 0 20px;
+  display: none;
+}
+#present-month{
+  float: right;
+  margin: -20px 0 0 20px;
+  display: none;
+}
+#input-dr{
+  width: 254px;
+  height:24px ;
+  border-radius: 3px;
+  background-color: rgba(192, 192, 192, 0.459);
+  border: none;
+}
+/* #label{
+  padding-top:3px;
+} */
+#input-cl{
+  width: 100px;
+  height: 30px;
+  background-color:pink ;
+  color: rgb(245, 8, 87);
+  border: none;
+  border-radius: 5px;
+}
+#input-ca{
+  width: 100px;
+  height: 30px;
+  margin-left: 10px;
+  background-color: rgb(247, 59, 122);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+th{
+  background-color: rgba(192, 192, 192, 0.459);
+  width: 800px;
+  height: 40px;
+  color: black;
+  font-size: 12px;
+}
+#tablehead{
+  padding-left: 70px;
+  padding-top: 10px;
+}
+#bt{
+  width: 90px;
+  border-right: 2px solid silver;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 5px;
+  font-size: 13px;
+}
+#ct{
+  position: absolute;
+  top: 3px;
+  left:100px;
+  padding-top: 5px;
+  padding-left:30px;
+  font-size: 13px;
+}
+#footer{
+  background-color: white;
+  color: black;
+  font-size: small;
+  text-align: center;
+  padding: 15px;
+  height: 20px;
+}

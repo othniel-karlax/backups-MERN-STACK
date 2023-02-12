@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+.projectcalc{
+   height: 100vh;
+   display:flex ;
+   justify-content: center;
+   align-items: center;
+   background: rgb(109, 146, 248);
+}
+.calc{
+     display: grid;
+     grid-template-columns: repeat(3, 80px);
+     gap: 20px;
+     padding: 3%;
+     box-shadow: inset 4px 4px 100px rgb(86, 58, 138),
+                    5px 5px 12px rgb(207, 87, 74);
+}
+input{
+    grid-column: span 4;
+    height: 50px;
+    background: black;
+    color: white;
+
+}
+button{
+    background: white;
+}
+#f{
+    width: 80px;
+}

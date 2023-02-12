@@ -1,0 +1,77 @@
+import React from "react";
+
+function AuctionAmount(){
+
+
+
+
+	return(
+        <React.Fragment>
+            <div id="parentdiv-whitebg">
+		<div id="Lside-div">
+                    <form>
+
+                    <div>
+                        <label id="label">Chit value</label>
+                        <br></br>
+                        <input type={"text"} id="input"></input> 
+                    </div>
+
+                    <br></br>
+
+                    <div>
+			<label>Commission Percentage %</label>
+                   	<br></br>
+                    	<select id="input-dr">
+                        <option value="5%">5%</option>
+                        <option value="10%">10%</option>
+                        <option value="15%">15%</option>
+                    	</select>
+                    </div>
+
+                    <br></br>
+
+                    <div>
+			<label>Total Months</label>
+                    	<br></br>
+                    	<input type={"text"}id="input"></input>
+		    </div>
+
+                    <br></br>
+
+                    <div>
+			<label>Present Months</label>
+                    	<br></br>
+                   	<input type={"number"}id="input" ></input>
+		    </div>
+
+                    <br></br>
+
+                    <button id="input-cl">Clear</button>
+                    <button id="input-ca">Calculate</button>
+
+                    </form>
+                </div>
+                </div>
+
+                <div id="Rside-div">
+                    <div>
+                        <th>
+                            <td id="tablehead">S.No</td>
+                            <td id="tablehead">Interest</td>
+                            <td id="tablehead">Auctioned Amount</td>
+                            <td id="tablehead">Installment</td>
+                            <td id="tablehead">Commission</td>
+                        </th>
+                    </div>
+                </div>
+
+                <div id="footer">
+                &#169; 2022, Alpha Business Solutions Pvt.Ltd.All Rights Reserved.
+            	</div>
+        </React.Fragment>
+    )
+
+}
+export default AuctionAmount;
+

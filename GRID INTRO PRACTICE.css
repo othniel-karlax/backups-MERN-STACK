@@ -1,0 +1,43 @@
+.parent{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    grid-gap: 5px;
+   
+
+}
+.child:nth-child(odd){
+    background-color: black;
+    color: rgb(184, 83, 24);
+    padding: 10px;
+    font-size: larger;
+    border: 1px solid aqua;
+}
+.child:nth-child(even){
+    background-color: salmon;
+    color: blue;
+    padding: 10px;
+    font-size: larger;
+    border: 1px solid aqua;
+}
+.mic{
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 10px 10px;
+    grid-gap: 5px;
+
+}
+.otht{
+    background-color: rgb(73, 197, 36);
+    color: rgb(184, 83, 24);
+    padding: 20px;
+    border: 1px solid aqua;
+}
+.oth{
+    background-color: rgb(68, 23, 105);
+    color: rgb(184, 83, 24);
+    padding: 20px;
+    border: 1px solid aqua;
+}
